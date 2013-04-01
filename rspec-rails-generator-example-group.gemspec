@@ -1,18 +1,18 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "generator_spec/version"
+require "rspec-rails-generator-example-group"
 
 Gem::Specification.new do |s|
-  s.name        = "generator_spec"
-  s.version     = GeneratorSpec::VERSION
+  s.name        = "rspec-rails-generator-example-group"
+  s.version     = Rspec::Rails::GeneratorExampleGroup::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Steve Hodgkiss"]
-  s.email       = ["steve@hodgkiss.me.uk"]
+  s.authors     = ["Pablo Herrero"]
+  s.email       = ["pablodherrero@gmail.com"]
   s.homepage    = "https://github.com/stevehodgkiss/generator_spec"
   s.summary     = %q{Test Rails generators with RSpec}
   s.description = %q{Test Rails generators with RSpec}
 
-  s.rubyforge_project = "generator_spec"
+  s.rubyforge_project =  "rspec-rails-generator-example-group"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
