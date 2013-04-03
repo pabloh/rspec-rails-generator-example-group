@@ -4,7 +4,7 @@ require "rspec-rails-generator-example-group"
 
 Gem::Specification.new do |s|
   s.name        = "rspec-rails-generator-example-group"
-  s.version     = Rspec::Rails::GeneratorExampleGroup::VERSION
+  s.version     = RSpec::Rails::GeneratorExampleGroupGem::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Pablo Herrero"]
   s.email       = ["pablodherrero@gmail.com"]
