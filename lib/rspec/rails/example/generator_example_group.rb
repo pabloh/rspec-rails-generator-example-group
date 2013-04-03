@@ -1,11 +1,11 @@
 require 'active_record'
 require 'rails/generators/test_case'
-require 'generator_spec/matcher'
+require 'rspec/rails/generator_matchers'
 
-module GeneratorSpec
-  module TestCase
+module RSpec::Rails
+  module GeneratorExampleGroup
     extend ActiveSupport::Concern
-    include Matcher
+    include RSpec::Rails::GeneratorMatchers
     include FileUtils
 
     included do

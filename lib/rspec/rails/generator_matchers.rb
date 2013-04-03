@@ -1,5 +1,5 @@
-module GeneratorSpec
-  module Matcher
+module RSpec::Rails
+  module GeneratorMatchers
     # Taken (with permission) from beard by Yahuda Katz
     # https://github.com/carlhuda/beard
   
