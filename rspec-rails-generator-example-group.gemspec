@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Pablo Herrero"]
   s.email       = ["pablodherrero@gmail.com"]
-  s.homepage    = "https://github.com/stevehodgkiss/generator_spec"
+  s.homepage    = "https://github.com/pabloh/rspec-rails-generator-example-group"
   s.summary     = %q{Test Rails generators with RSpec}
   s.description = %q{Test Rails generators with RSpec}
 
