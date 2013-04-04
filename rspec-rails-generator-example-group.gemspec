@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "rspec-rails-generator-example-group"
+require "rspec/rails/generator_example_group_version"
 
 Gem::Specification.new do |s|
   s.name        = "rspec-rails-generator-example-group"
