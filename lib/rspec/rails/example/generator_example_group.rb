@@ -1,6 +1,8 @@
 require 'rails/version'
 require 'rails/generators'
 require 'rspec/rails/generator_matchers'
+require 'rspec/rails/adapters'
+require 'rspec/rails/example/rails_example_group'
 
 if Rails::VERSION::MAJOR >= 4
   require 'rails/generators/testing/behaviour'
@@ -15,10 +17,12 @@ module RSpec
     module GeneratorExampleGroup
       extend ActiveSupport::Concern
 
+      include RSpec::Rails::RailsExampleGroup
+
       include ::Rails::Generators::Testing::Assertions
+      include RSpec::Rails::GeneratorMatchers
       include FileUtils
 
-      include RSpec::Rails::GeneratorMatchers
 
       ::Rails::Generators.no_color!
 
