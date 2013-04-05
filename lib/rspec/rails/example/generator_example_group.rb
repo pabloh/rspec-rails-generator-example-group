@@ -7,9 +7,7 @@ if Rails::VERSION::MAJOR >= 4
   require 'rails/generators/testing/setup_and_teardown'
   require 'rails/generators/testing/assertions'
 else
-  require 'backports/rails/generators/testing/behaviour'
-  require 'backports/rails/generators/testing/setup_and_teardown'
-  require 'backports/rails/generators/testing/assertions'
+  require 'rails_generators_test_case_modules'
 end
 
 
